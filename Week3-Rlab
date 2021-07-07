@@ -1,0 +1,33 @@
+
+
+	## Inverse Property
+    i <- NULL
+
+    ## Matrix Set-up
+    set <- function( matrix ) {
+            m <<- matrix
+            i <<- NULL
+    }
+
+    ## Matrix Set-up
+    get <- function() {
+    	## Return the matrix
+    	m
+    }
+
+    ## Inverse Matrix Set-up
+    setInverse <- function(inverse) {
+        i <<- inverse
+    }
+
+    ## Inverse Matrix Set-up
+    getInverse <- function() {
+        ## Return the inverse property
+        i
+    }
+
+    ## Methods List
+    list(set = set, get = get,
+         setInverse = setInverse,
+         getInverse = getInverse)
+}
